@@ -12,10 +12,9 @@
   border-radius: 10px;
   /* margin: 10px 15px 20px 25px; по часовой стрелке top right bottom left */
   margin: auto;
-  .box:last-child /*последний в списке*/
-  .box:first-child /*первый в списке*/
-  .box:nth-child(odd) /*нечетный, even - четный*/
-  .box:first-child(n+3) /*для всех с 0 + 3 элемента по индексу*/
-  .box:nth-child(3n + 4) /*каждый 3ий элемент списка начиная с (0 + 4)-го элемента по индексу*/
-
+  /* .box:last-child последний в списке */
+  /* .box:first-child первый в списке */
+  /* .box:nth-child(odd) нечетный, even - четный */
+  /* .box:first-child(n+3) для всех с 0 + 3 элемента по индексу */
+  /* .box:nth-child(3n + 4) каждый 3ий элемент списка начиная с (0 + 4)-го элемента по индексу */
 }
