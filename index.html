@@ -37,7 +37,9 @@
               <li><a class="link" href="#contacts-section">Контракты </a></li>
             </ul>
           </nav>
-          <button class="button" type="button">Заказать звонок</button>
+          <button class="button modal-btn-open" type="button">
+            Заказать звонок
+          </button>
         </div>
       </div>
     </header>
@@ -87,28 +89,50 @@
       </section>
       <section class="section" id="chefs-section">
         <div class="container">
-          <h2 class="chefs-title section-title">
-            Наши лучшие <span class="accent">шеф-повара</span>
+          <h2 class="chefs-title section-title centred">
+            Наши лучшие <br /><span class="accent">шеф-повара</span>
           </h2>
-          <ul>
-            <li>
-              <article>
-                <h3 class="chef-title">Настя</h3>
-                <p>Привет, я Настя!</p>
-                <p>Уже 10 лет я воплощаю, в жизнь интересные и вкусные идеи.</p>
-                <p>Я выпеку для вас найвкуснейшие изделия!</p>
+          <ul class="chefs-list">
+            <li class="chefs-item">
+              <article class="chef-card">
+                <img
+                  class="chef-photo"
+                  src="./images/nastya-chef.jpg"
+                  alt="Nastya chef"
+                />
+                <div>
+                  <h3 class="chef-title">Настя</h3>
+                  <div class="chef-text">
+                    <p>Привет, я Настя!</p>
+                    <p>
+                      Уже 10 лет я воплощаю в <br />
+                      жизнь интересные и вкусные идеи.
+                    </p>
+                    <p>
+                      Я выпеку для вас <br />
+                      найвкуснейшие изделия!
+                    </p>
+                  </div>
+                </div>
               </article>
             </li>
-            <li>
-              <article>
-                <h3 class="chef-title">Влад</h3>
-                <p>Привет, я Влад!</p>
-                <p>
-                  Мой кондитерский стаж уже 18 лет. SHOP BEKERY - это наша
-                  любовь, которой мы желимся каждый раз с Вами через нашу
-                  выпечку!
-                </p>
-                <p>Я сделаю для вас уникальную начинку на любой вкус.</p>
+            <li class="chefs-item">
+              <article class="chef-card">
+                <img
+                  class="chef-photo"
+                  src="./images/vlad-chef.jpg"
+                  alt="Vlad chef"
+                />
+                <div>
+                  <h3 class="chef-title">Влад</h3>
+                  <p>Привет, я Влад!</p>
+                  <p>
+                    Мой кондитерский стаж уже 18 лет. SHOP BEKERY - это наша
+                    любовь, которой мы желимся каждый раз с Вами через нашу
+                    выпечку!
+                  </p>
+                  <p>Я сделаю для вас уникальную начинку на любой вкус.</p>
+                </div>
               </article>
             </li>
           </ul>
@@ -116,122 +140,160 @@
       </section>
       <section class="section" id="formats-section">
         <div class="container">
-          <h2 class="formats-title section-title">Форматы</h2>
-          <ul class="formats-list">
-            <li class="formats-item">
-              <article class="format-card">
-                <h3 lang="en" class="format-title">Walrus</h3>
-                <div class="format-text">
-                  <p>Площадь: до 120 м2</p>
-                  <p>Меню: расширенное</p>
-                  <p>
-                    Штат: 2 продавца-кассира, 2 пекаря, 2 помощника пекаря, 2
-                    официанта-разнорабочего
-                  </p>
-                  <p>Посадочные места: есть</p>
-                </div>
-              </article>
-            </li>
-            <li class="formats-item">
-              <article class="format-card">
-                <h3 lang="en" class="format-title">Horseshoe</h3>
-                <div class="format-text">
-                  <p>Площадь: до 25 м2</p>
-                  <p>Меню: самые популярные позиции</p>
-                  <p>Штат: 2 продавца-кассира, 2 пекаря, 1 помощник пекаря</p>
-                  <p>Посадочные места: отсутствуют</p>
-                </div>
-              </article>
-            </li>
-            <li class="formats-item">
-              <article class="format-card">
-                <h3 lang="en" class="format-title">Handlebar</h3>
-                <div class="format-text">
-                  <p>Площадь: до 15 м2</p>
-                  <p>Меню: самые популярные позиции</p>
-                  <p>Штат: 1 продавец-кассир, 1 пекарь, 1 помощник пекаря</p>
-                  <p>Посадочные места: отсутствуют</p>
-                </div>
-              </article>
-            </li>
-          </ul>
+          <h2 class="formats-title section-title centred">Форматы</h2>
+          <div class="formats-container">
+            <button class="carousel-button" type="button">
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <ul class="formats-list">
+              <li class="formats-item">
+                <article class="format-card walrus">
+                  <h3 lang="en" class="format-title">Walrus</h3>
+                  <div class="format-text">
+                    <p>Площадь: до 120 м2</p>
+                    <p>Меню: расширенное</p>
+                    <p>
+                      Штат: 2 продавца-кассира, 2 пекаря, 2 помощника пекаря, 2
+                      официанта-разнорабочего
+                    </p>
+                    <p>Посадочные места: есть</p>
+                  </div>
+                </article>
+              </li>
+              <li class="formats-item">
+                <article class="format-card">
+                  <h3 lang="en" class="format-title">Horseshoe</h3>
+                  <div class="format-text">
+                    <p>Площадь: до 25 м2</p>
+                    <p>Меню: самые популярные позиции</p>
+                    <p>Штат: 2 продавца-кассира, 2 пекаря, 1 помощник пекаря</p>
+                    <p>Посадочные места: отсутствуют</p>
+                  </div>
+                </article>
+              </li>
+              <li class="formats-item">
+                <article class="format-card">
+                  <h3 lang="en" class="format-title">Handlebar</h3>
+                  <div class="format-text">
+                    <p>Площадь: до 15 м2</p>
+                    <p>Меню: самые популярные позиции</p>
+                    <p>Штат: 1 продавец-кассир, 1 пекарь, 1 помощник пекаря</p>
+                    <p>Посадочные места: отсутствуют</p>
+                  </div>
+                </article>
+              </li>
+            </ul>
+            <button class="carousel-button" type="button">
+              <svg width="16" height="16">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
-      <section class="section" id="contacts-section">
+      <section class="contacts-section section" id="contacts-section">
         <div class="container">
-          <h2 class="contacts-title section-title">
-            Присоединяйся к сети пекарень
-          </h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2sSichovykh%20Striltsiv%20St%2C%2054%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sde!2sde!4v1761581434316!5m2!1sde!2sde"
-            width="603"
-            height="595"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          <div class="contact-container">
+            <div class="contact-form">
+              <h2 class="contacts-title section-title">
+                Присоединяйся к сети пекарень
+              </h2>
+              <p>Заполни форму, чтобы мы связались с тобой</p>
+            </div>
+            <iframe
+              class="contact-map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1636289098733!2d30.4912733!3d50.4566776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce637c006b2d%3A0xaf86385f19996ff0!2sSichovykh%20Striltsiv%20St%2C%2054%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sde!2sde!4v1761581434316!5m2!1sde!2sde"
+              width="603"
+              height="595"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="container">
-        <nav>
-          <a href="#">
-            <img src="./images/logo.svg" alt="Логотип современной пекарни" />
-          </a>
-          <!-- -->
-          <ul>
-            <li>
-              <a class="link" href="#traditions-section">Наши традиции</a>
-            </li>
-            <li><a class="link" href="#chefs-section">Шаф-повара</a></li>
-            <li><a class="link" href="#formats-section">Форматы</a></li>
-            <li><a class="link" href="#contacts-section">Контракты </a></li>
-          </ul>
-        </nav>
-        <address>
-          <ul>
-            <li>
-              <a class="adress-link" href="tel:+380960000007"
-                >+ 38 (096) 000 00 07</a
-              >
-            </li>
-            <li>
-              <a
-                class="adress-link"
-                href="https://mail.google.com/mail/?view=cm&to=shopbakery@gmail.com"
-                target="_blank"
-              >
-                shopbakery@gmail.com
-              </a>
-            </li>
-            <li>
-              <a
-                class="adress-link"
-                href="https://maps.app.goo.gl/WHm4tBfDqCUtGvKe7"
-                target="_blank"
-              >
-                Україна, м. Київ, вул. Січових Стрільців 54
-              </a>
-            </li>
-            <li>
+        <div class="footer-container">
+          <nav class="footer-nav">
+            <div class="footer-logo">
               <a href="#">
-                <!--Facebook logo-->
+                <img
+                  src="./images/logo.svg"
+                  alt="Логотип современной пекарни"
+                />
               </a>
-            </li>
-            <li>
-              <a href="#">
-                <!--Instagram logo-->
-              </a>
-            </li>
-          </ul>
-          <a class="adress-link" href="#" target="_blank"
-            >Политика конфиденциальности</a
-          >
-          <p class="adress-copyright">&copy; Данные защищены</p>
-        </address>
+            </div>
+            <!-- -->
+            <ul class="footer-menu">
+              <li>
+                <a class="link" href="#traditions-section">Наши традиции</a>
+              </li>
+              <li><a class="link" href="#chefs-section">Шаф-повара</a></li>
+              <li><a class="link" href="#formats-section">Форматы</a></li>
+              <li><a class="link" href="#contacts-section">Контракты </a></li>
+            </ul>
+          </nav>
+          <address class="footer-address">
+            <ul class="adress-list">
+              <li>
+                <a class="adress-link" href="tel:+380960000007"
+                  >+ 38 (096) 000 00 07</a
+                >
+              </li>
+              <li>
+                <a
+                  class="adress-link"
+                  href="https://mail.google.com/mail/?view=cm&to=shopbakery@gmail.com"
+                  target="_blank"
+                >
+                  shopbakery@gmail.com
+                </a>
+              </li>
+              <li>
+                <a
+                  class="adress-link"
+                  href="https://maps.app.goo.gl/WHm4tBfDqCUtGvKe7"
+                  target="_blank"
+                >
+                  Україна, м. Київ, вул. Січових Стрільців 54
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="adress-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="adress-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="address-info">
+              <a class="adress-link" href="#" target="_blank"
+                >Политика конфиденциальности</a
+              >
+              <p class="adress-copyright">&copy; Данные защищены</p>
+            </div>
+          </address>
+        </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
