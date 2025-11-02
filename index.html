@@ -185,7 +185,7 @@
                 </article>
               </li>
             </ul>
-            <button class="carousel-button" type="button">
+            <button class="carousel-button next" type="button">
               <svg width="16" height="16">
                 <use href="./images/icons.svg#icon-arrow"></use>
               </svg>
@@ -201,6 +201,53 @@
                 Присоединяйся к сети пекарень
               </h2>
               <p>Заполни форму, чтобы мы связались с тобой</p>
+              <form name="contact-form" autocomplete="off">
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-name"
+                    >Имя</label
+                  >
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    placeholder="Имя"
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-tel"
+                    >Телефон</label
+                  >
+                  <input
+                    class="form-input"
+                    type="tel"
+                    id="user-tel"
+                    name="user-tel"
+                    placeholder="Телефон"
+                  />
+                </div>
+                <div class="form-field">
+                  <label class="form-label visually-hidden" for="user-email"
+                    >Электронная почта</label
+                  >
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                    placeholder="Электронная почта"
+                  />
+                </div>
+                <button class="form-button button" type="submit">
+                  Заказать звонок
+                </button>
+                <p class="form-terms">
+                  Нажимая на кнопку я соглашаюсь с
+                  <a class="form-terms-links" href="#"
+                    >политикой конфиденциальности</a
+                  >
+                </p>
+              </form>
             </div>
             <iframe
               class="contact-map"
@@ -292,6 +339,61 @@
     <div class="backdrop">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
+        <h2>Заказать звонок</h2>
+        <p>Оставьте заявку и наш специалист свяжется с вами</p>
+        <form name="modal-form" autocomplete="on">
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-name"
+              >Имя</label
+            >
+            <input
+              class="form-input"
+              type="text"
+              id="user-name"
+              name="user-name"
+              placeholder="Имя"
+              required
+              minlength="2"
+              maxlength="20"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-tel"
+              >Телефон</label
+            >
+            <input
+              class="form-input"
+              type="tel"
+              id="user-tel"
+              name="user-tel"
+              placeholder="Телефон"
+              required
+              pattern="^\+[9-0]{12}"
+            />
+          </div>
+          <div class="form-field">
+            <label class="form-label visually-hidden" for="user-email"
+              >Электронная почта</label
+            >
+            <input
+              class="form-input"
+              type="email"
+              id="user-email"
+              name="user-email"
+              placeholder="Электронная почта"
+              required
+            />
+          </div>
+          <button class="form-button button" type="submit">
+            Заказать звонок
+          </button>
+          <p class="form-terms">
+            Нажимая на кнопку я соглашаюсь с
+            <a class="form-terms-links" href="#"
+              >политикой конфиденциальности</a
+            >
+          </p>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
