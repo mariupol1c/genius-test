@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+.parent {
+  width: auto;
+  height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border: 2px solid black;
+  color: antiquewhite;
+  font-size: 40px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item.red {
+  width: 350px;
+  height: 350px;
+  background-color: red;
+  transform: translate(10px, -30px); /*перемещение/сдвиг*/
+  transition-property: background-color 2 s, color 3s;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+}
+
+.item.red:hover {
+  background-color: pink;
+  color: black;
+}
+
+.item.green {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  /* transform: rotate(0.35turn);*/ /* 180deg, поворот 1turn=360deg */
+  animation-name: spin;
+  animation-duration: 2s;
+  animation-duration: 1s;
+  animation-iteration-count: infinite; /*можео установить конктреное количество повторов*/
+}
+
+@keyframes spin {
+  /* from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+  } */
+
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(100deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.item.blue {
+  width: 250px;
+  height: 250px;
+  background-color: blue;
+  transform: scale(1.5); /*масштабирование/увеличение*/
+  /* z-index: 1; */
+}
+
+.item.orange {
+  width: 400px;
+  height: 400px;
+  background-color: orange;
+  transform: skew(20deg, 20deg); /*растягивание за углы*/
+}
