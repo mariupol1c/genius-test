@@ -1,0 +1,37 @@
+@import "./utils/fonts";
+@import "./utils/variables";
+@import "./base";
+
+@import "./utils/utills";
+@import "./components/buttons";
+@import "./components/links";
+@import "./components/hero-section";
+@import "./components/header";
+
+@import "./layouts/advantages-section";
+@import "./layouts/container";
+@import "./layouts/section";
+@import "./layouts/traditions-section";
+@import "./layouts/chefs-section";
+@import "./layouts/format-section";
+@import "./layouts/contact-section";
+@import "./layouts/footer";
+@import "./layouts/modal";
+@import "./layouts/forms";
+
+@import "./utils/mixins";
+
+.brand.uppercase {
+  text-transform: uppercase;
+}
+
+.test-box {
+  /*линейный, но есть еще радиальный/круговой radial-gradient*/
+  background-image: linear-gradient(
+    to left
+      /*right, bottom, top, 45deg -влево, вправо, вниз, вверх, под углом 45 градусов*/
+      gold 50%,
+    green 70%,
+    blue 100%
+  ); /*Градиент указанных цветов, до 50% т.е. до полоивны будет золотой, до 70 зеленый и до конца будет синий*/
+}

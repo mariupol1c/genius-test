@@ -17,13 +17,13 @@
       rel="stylesheet"
     /> -->
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-        <div class="header-conteiner">
-          <nav class="header-nav">
+        <div class="header__conteiner">
+          <nav class="header__nav">
             <a href="./index.html">
               <img src="./images/logo.svg" alt="Логотип современной пекарни" />
             </a>
@@ -150,6 +150,11 @@
             <ul class="formats-list">
               <li class="formats-item">
                 <article class="format-card walrus">
+                  <img
+                    class="format-image"
+                    src="./images/walrus-format.jpg"
+                    alt="Walrus format"
+                  />
                   <h3 lang="en" class="format-title">Walrus</h3>
                   <div class="format-text">
                     <p>Площадь: до 120 м2</p>
@@ -164,6 +169,11 @@
               </li>
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./images/horseshoe-format.jpg"
+                    alt="Horseshoe format"
+                  />
                   <h3 lang="en" class="format-title">Horseshoe</h3>
                   <div class="format-text">
                     <p>Площадь: до 25 м2</p>
@@ -175,6 +185,11 @@
               </li>
               <li class="formats-item">
                 <article class="format-card">
+                  <img
+                    class="format-image"
+                    src="./images/handlebar-format.jpg"
+                    alt="Handlebar format"
+                  />
                   <h3 lang="en" class="format-title">Handlebar</h3>
                   <div class="format-text">
                     <p>Площадь: до 15 м2</p>
@@ -336,7 +351,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden">
       <div class="modal">
         <button class="modal-btn-close" type="button">Close</button>
         <h2>Заказать звонок</h2>
